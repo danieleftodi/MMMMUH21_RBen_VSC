@@ -1,2 +1,4 @@
 ﻿  Labs c++ VSC.cpp
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(67,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(68,15): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Labs c++ VSC.vcxproj -> C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Debug\Labs c++ VSC.exe

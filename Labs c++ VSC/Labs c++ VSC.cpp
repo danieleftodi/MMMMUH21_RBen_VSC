@@ -16,44 +16,99 @@
 
 using namespace std;
 
-bool Hitta(int hitta[], int size, int searchitm);
+
+class rectangle
+{
+
+private:
+	float length;
+	float width;
+
+public:
+	void setLength(float L)
+	{
+		if (L >= 0)
+			length = L;
+		else
+			cout << "erorr, please enter only positive number" << endl;
+	}
+	float getLength()
+	{
+		return length;
+	}
+	void setWidth(float W)
+	{
+		if (W >= 0)
+			width = W;
+		else
+			cout << "erorr, please enter only positive number" << endl;
+		
+	}
+	float getWidth()
+	{
+		return width;
+	}
+
+
+	float getArea()
+	{
+		return length * width;
+	}
+
+};
 
 int main()
 {
+	rectangle box;
 	int x, y;
-	int hitta[] = { 10,30,20,80,40 };
-	cout << "hitta ett nummer: ";
+	cout << "Enter Length: ";
 	cin >> x;
-	if (Hitta(hitta, 5, x) == true)
-	{
-		for (int i = 0; i < 5; i++)
-		{
-			if (hitta[i] == x)
-				y = i;
-		}
-		cout << x << " its found at index:  " << y << endl;
-	}
+	cout << "Enter Width: ";
+	cin >> y;
+	box.setLength(x);
+	box.setWidth(y);
+	cout << box.getArea();
 
-	else
-		cout << x << " its not found " << endl;
-}
 
-bool Hitta(int hitta[], int size, int searchitm)
-{
-
-	bool found = false;
-
-	for (int i = 0; i < size; i++)
-	{
-		if (hitta[i] == searchitm)
-			found = true;
-	}
-	return found;
-
+		return 0;
 }
 
 
-
+//bool Hitta(int hitta[], int size, int searchitm);
+//
+//int main()
+//{
+//	int x, y;
+//	int hitta[] = { 10,30,20,80,40 };
+//	cout << "hitta ett nummer: ";
+//	cin >> x;
+//	if (Hitta(hitta, 5, x) == true)
+//	{
+//		for (int i = 0; i < 5; i++)
+//		{
+//			if (hitta[i] == x)
+//				y = i;
+//		}
+//		cout << x << " its found at index:  " << y << endl;
+//	}
+//
+//	else
+//		cout << x << " its not found " << endl;
+//}
+//
+//bool Hitta(int hitta[], int size, int searchitm)
+//{
+//
+//	bool found = false;
+//
+//	for (int i = 0; i < size; i++)
+//	{
+//		if (hitta[i] == searchitm)
+//			found = true;
+//	}
+//	return found;
+//
+//}
 
 //template <class t>
 //
