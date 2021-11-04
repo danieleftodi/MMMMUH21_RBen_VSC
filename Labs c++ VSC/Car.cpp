@@ -3,17 +3,21 @@
 
 using namespace std;
 
-Car::Car(string ma, int mo, string co):maker(ma), modell (mo), color (co)
+Car::Car(string ma, int mo, string co):maker(ma), modell (mo), color (co)// Detta är Overlaod constractur
 {
 	
-	/*maker = "honda";
+}
+
+Car::Car() //Detta är defualt constractur
+{
+	maker = "honda";
 	modell = 2019;
-	color = "red";*/
+	color = "red";
 }
 
 Car::~Car()
 {
-	cout<<"hej med dig"<< endl;
+	/*cout<<"hej med dig"<< endl;*/
 
 }
 

@@ -16,13 +16,9 @@ public:
 	void setColor(string m);
 	string getcolor();
 
-	Car(string ma, int mo,string co);
+	Car(string ma, int mo,string co); // Detta är Overlaod constractur
+	Car();//Detta är defualt constractur
 	~Car();
-
-
-	//Detta är defualt constractur
-	/*Car();
-	~Car();*/
 
 };
 
