@@ -142,9 +142,11 @@
   <ItemGroup>
     <ClCompile Include="Labs c++ VSC.cpp" />
     <ClCompile Include="Car.cpp" />
+    <ClCompile Include="Overlaoding.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h" />
+    <ClInclude Include="Overlaoding.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

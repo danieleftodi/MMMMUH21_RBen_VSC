@@ -15,6 +15,7 @@
 #include <climits>
 #include <sstream>
 #include "Car.h"
+#include "Overlaoding.h"
 
 using namespace std;
 
@@ -72,17 +73,39 @@ using namespace std;
 //	return 0;
 //}
 
+void car();
+void overlaoding();
 int main()
 {
-	Car c1;
-	c1.setMaker("Volvo");
-	c1.setModell(2018);
-
-	cout <<"Bil Tillverkaren: "<< c1.getMaker() << endl;
-	cout <<"Bil modell year: " << c1.getModell() << endl;
-
+	overlaoding();
+	
+}
+void overlaoding()
+{
+	Overlaoding c1;
+	cout << " add version 1" << c1.add(3, 1) << endl;
+	cout << " add version 2" << c1.add(3, 1, 5) << endl;
+	cout << " add version 3" << c1.add(3, 1, 5, 8) << endl;
+	cout << " add version 5" << c1.add("Rachid", "Benzhair") << endl;
 }
 
+
+
+
+
+void car()
+{
+	Car c1("Toyota", 2020, "blacka");
+	cout << "Bil Tillverkaren: " << c1.getMaker() << endl;
+	cout << "Bil modell year: " << c1.getModell() << endl;
+	cout << "Bil color: " << c1.getcolor() << endl;
+	cout << "***********************************" << endl;
+	Car c2("Volvo", 2018, "red");
+	cout << "Bil Tillverkaren: " << c2.getMaker() << endl;
+	cout << "Bil modell year: " << c2.getModell() << endl;
+	cout << "Bil color: " << c2.getcolor() << endl;
+	
+}
 
 //bool Hitta(int hitta[], int size, int searchitm);
 //
@@ -1804,20 +1827,6 @@ int main()
 //	return num2;
 //
 //}
-//
-
-//int main()
-//
-//{
-//
-//		float num1, num2, val;
-//		float x = Mini(0, 0, 0);
-//
-//
-//
-//	system("PAUSE");
-//}
-
 //int main()
 //{
 //
