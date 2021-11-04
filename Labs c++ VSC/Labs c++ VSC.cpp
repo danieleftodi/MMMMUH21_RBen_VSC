@@ -13,64 +13,74 @@
 #include <climits>
 #include <random>
 #include <climits>
+#include <sstream>
+#include "Car.h"
 
 using namespace std;
 
-
-class rectangle
-{
-
-private:
-	float length;
-	float width;
-
-public:
-	void setLength(float L)
-	{
-		if (L >= 0)
-			length = L;
-		else
-			cout << "erorr, please enter only positive number" << endl;
-	}
-	float getLength()
-	{
-		return length;
-	}
-	void setWidth(float W)
-	{
-		if (W >= 0)
-			width = W;
-		else
-			cout << "erorr, please enter only positive number" << endl;
-		
-	}
-	float getWidth()
-	{
-		return width;
-	}
-
-
-	float getArea()
-	{
-		return length * width;
-	}
-
-};
+//class rectangle
+//{
+//
+//private:
+//	float length;
+//	float width;
+//
+//public:
+//	void setLength(float L)
+//	{
+//		if (L >= 0)
+//			length = L;
+//		else
+//			cout << "erorr, please enter only positive number" << endl;
+//	}
+//	float getLength()
+//	{
+//		return length;
+//	}
+//	void setWidth(float W)
+//	{
+//		if (W >= 0)
+//			width = W;
+//		else
+//			cout << "erorr, please enter only positive number" << endl;
+//
+//	}
+//	float getWidth()
+//	{
+//		return width;
+//	}
+//
+//
+//	float getArea()
+//	{
+//		return length * width;
+//	}
+//	
+//};
+//float print()
+//{
+//
+//	rectangle box;
+//	int x, y;
+//	cout << "Enter Length: ";
+//	cin >> x;
+//	cout << "Enter Width: ";
+//	cin >> y;
+//	box.setLength(x);
+//	box.setWidth(y);
+//	cout << box.getArea();
+//	return 0;
+//}
 
 int main()
 {
-	rectangle box;
-	int x, y;
-	cout << "Enter Length: ";
-	cin >> x;
-	cout << "Enter Width: ";
-	cin >> y;
-	box.setLength(x);
-	box.setWidth(y);
-	cout << box.getArea();
+	Car c1;
+	c1.setMaker("Volvo");
+	c1.setModell(2018);
 
+	cout <<"Bil Tillverkaren: "<< c1.getMaker() << endl;
+	cout <<"Bil modell year: " << c1.getModell() << endl;
 
-		return 0;
 }
 
 
