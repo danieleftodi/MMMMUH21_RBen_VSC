@@ -1,2 +1,6 @@
-﻿  Car.cpp
+﻿  Labs c++ VSC.cpp
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(54,21): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(58,24): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(70,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(176,6): warning C4101: 'r': unreferenced local variable
   Labs c++ VSC.vcxproj -> C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\x64\Debug\Labs c++ VSC.exe

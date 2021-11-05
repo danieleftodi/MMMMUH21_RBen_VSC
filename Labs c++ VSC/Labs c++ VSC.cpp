@@ -16,17 +16,9 @@
 #include <sstream>
 #include "Car.h"
 #include "Overlaoding.h"
+#include"Distance.h"
 
 using namespace std;
-
-void car();
-void overlaoding();
-
-int main()
-{
-	car();
-	
-}
 
 void overlaoding()
 {
@@ -53,8 +45,233 @@ void car()
 	cout << "Bil modell year: " << c3.getModell() << endl;
 	cout << "Bil color: " << c3.getcolor() << endl;
 
+
+}
+void distance()
+{
+	Distance d1;
+	d1.print();
+	Distance d2(5, 2.55);
+	d2.print();
+	Distance d3(d2);
+	d3.print();
+	d3.setDistance(7, 20.3);
+	d3.print();
+	Distance d4 = d3;
+	d4.print();
+
+
+}
+void Distance_expression()
+{
+	int u = 5, v = 45, a = 4;
+	float dis;
+
+	dis = (v * v - u * u) / (2 * a);
+	cout << dis << endl;
+}
+void triangles_area()
+
+{
+	int b = 7, h = 5;
+	float area;
+	area = (7 * 5) / 2;
+	cout << area << endl;
+}
+void hitta_Max(int x, int y)
+{
+	if (x > y)
+		cout << x << " are Max" << endl;
+	else
+		cout << y << " are Max" << endl;
+
+}
+void Postiv_or_Negativ(int n)
+{
+	if (n >= 0)
+		cout << n << " are positive" << endl;
+	else
+		cout << n << " are nigative" << endl;
+
+
+}
+void voidOddEven(int n)
+{
+	if (n % 2 == 0)
+		cout << n << " are even" << endl;
+	else
+		cout << n << " are odd" << endl;
+
+
+}
+void voidWorking(int hour)
+{
+	if (hour > 9 && hour < 17)
+		cout << "Working" << endl;
+	else
+		cout << "not Working" << endl;
+
+
+
+}
+void voidEligible(int age)
+{
+	if (age < 12 || age > 50)
+		cout << "eligible" << endl;
+	else
+		cout << "not eligible" << endl;
+}
+void Max3(int a, int b, int c)
+{
+	if (a > b)
+		if (a > c)
+			cout << a << " are Max" << endl;
+	if (b > a)
+		if (b > c)
+			cout << b << " are Max" << endl;
+		else
+			cout << c << " are Max" << endl;
+
+}
+void DigitToWord()
+{
+	int d;
+	cout << "Skriv ett nummer mellan 0 - 9: ";
+	cin >> d;
+	if (d >= 0 && d <= 9)
+	{
+		if (d == 0) cout << "zero";
+		if (d == 1) cout << "one";
+		if (d == 2) cout << "two";
+		if (d == 3) cout << "three";
+		if (d == 4) cout << "four";
+		if (d == 5) cout << "five";
+		if (d == 6) cout << "six";
+		if (d == 7) cout << "seven";
+		if (d == 8) cout << "eight";
+		if (d == 9) cout << "nine";
+
+	}
+
+
+}
+void Prime()
+{
+	int n;
+	cout << "Skriv ett nummer: ";
+	cin >> n;
+	for (int i = 2; i < n; i++)
+	{
+		if (n % i == 0)
+			cout << n << " are not prime" << endl;
+		else
+			cout << n << " are prime" << endl;
+		break;
+	}
+}
+void Reverse(int n)
+{
+	int rev = 0;
+	int m = n;
+	int r;
+	for (int i = 0; i < n; i++)
+	{
+		rev = rev * 10 + n % 10;
+		n = n / 10;
+
+	}
+
+	cout << rev << endl;
+
+
+}
+void voidDisplay()
+{
+	int A[] = { 2,4,6,8,10 };
+
+	for (int i = 0; i < 5; i++)
+	{
+		cout << A[i] << " at index:" << "\t " << i << endl;
+	}
+}
+void Min()
+{
+	int A[] = { 8,4,12,37,36,25,-2,10,15,25 };
+	int min = A[0];
+
+	for (int i : A)
+	{
+		if (i < min) {
+			min = i;
+		}
+
+	}
+	cout << min;
+}
+void Count()
+{
+	int A[] = { 3,5,-5,9,-4,10,-24,19,81,-7,12,13 };
+	int pcount = 0; int ncount = 0;
+
+	int nigativ = A[0];
+
+	for (int i = 0; i < 12; i++)
+	{
+		if (A[i] > 0)
+		{
+			pcount += A[i];
+		}
+		if (A[i] < 0)
+		{
+			ncount += A[i];
+		}
+
+	}
+
+	// write a loop to count positive and negative numbers
+	cout << pcount << " " << ncount;
+
+}
+void Draw_fyrkant(int n)
+{
+	for (int i = 1; i <= n; i++)
+	{
+		for(int j = 1; j <= n; j++)
+		{
+			
+			cout << " * ";
+		}
+		cout << endl;
+	}
+	
 	
 }
+
+
+
+int main()
+{
+	/*Distance_expression();
+	triangles_area();
+	hitta_Max(8, 4);
+	Postiv_or_Negativ(-6);
+	voidOddEven(20);
+	voidWorking(18);
+	voidEligible(55);
+	Max3(100, 20, 10);
+	DigitToWord();*/
+	/*Prime();*/
+	/*Reverse(5475);*/
+	/*voidDisplay();*/
+	/*Min();*/
+	/*Count();*/
+	/*Draw_fyrkant(5);*/
+
+
+
+
+}
+
 
 //class rectangle
 //{
