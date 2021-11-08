@@ -3,9 +3,11 @@
 
 using namespace std;
 
+int Car::count = 0; // en static varibel måste intieras utanför classen
+
 Car::Car(string ma, int mo, string co):maker(ma), modell (mo), color (co)// Detta är Overlaod constractur
 {
-	
+	count++;
 }
 
 Car::Car() //Detta är defualt constractur
@@ -13,11 +15,13 @@ Car::Car() //Detta är defualt constractur
 	maker = "honda";
 	modell = 2019;
 	color = "red";
+	count++;
 }
 
 Car::~Car()
 {
 	/*cout<<"hej med dig"<< endl;*/
+	count--;
 
 }
 
@@ -50,4 +54,9 @@ void Car::setColor(string m)
 string Car::getcolor()
 {
 	return color;
+}
+
+int Car::GetCar_count()
+{
+	return count;
 }

@@ -140,15 +140,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Calculator.cpp" />
+    <ClCompile Include="Counter.cpp" />
     <ClCompile Include="Distance.cpp" />
-    <ClCompile Include="Labs c++ VSC.cpp" />
+    <ClCompile Include="Labs c++ VSC.cpp">
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpp20</LanguageStandard>
+    </ClCompile>
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="Overlaoding.cpp" />
+    <ClCompile Include="Walk.cpp">
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpp20</LanguageStandard>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Calculator.h" />
     <ClInclude Include="Car.h" />
+    <ClInclude Include="Counter.h" />
     <ClInclude Include="Distance.h" />
     <ClInclude Include="Overlaoding.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Labs c++ VSC.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

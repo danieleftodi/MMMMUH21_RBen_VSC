@@ -17,6 +17,8 @@
 #include "Car.h"
 #include "Overlaoding.h"
 #include"Distance.h"
+#include"Calculator.h"
+#include"Counter.h"
 
 using namespace std;
 
@@ -35,21 +37,34 @@ void car()
 	cout << "Bil modell year: " << c1.getModell() << endl;
 	cout << "Bil color: " << c1.getcolor() << endl;
 	cout << "***********************************" << endl;
+	cout << "antal bilar " << c1.GetCar_count() << endl;
+	cout << "***********************************" << endl;
 	Car c2("Volvo", 2018, "red");
 	cout << "Bil Tillverkaren: " << c2.getMaker() << endl;
 	cout << "Bil modell year: " << c2.getModell() << endl;
 	cout << "Bil color: " << c2.getcolor() << endl;
 	cout << "***********************************" << endl;
+	cout << "antal bilar " << c2.GetCar_count() << endl;
+	cout << "***********************************" << endl;
 	Car c3;
 	cout << "Bil Tillverkaren: " << c3.getMaker() << endl;
 	cout << "Bil modell year: " << c3.getModell() << endl;
 	cout << "Bil color: " << c3.getcolor() << endl;
+	cout << "***********************************" << endl;
+	cout << "antal bilar " << c3.GetCar_count() << endl;
+	cout << "***********************************" << endl;
+
+
+
+
+
+
 
 
 }
 void distance()
 {
-	Distance d1;
+	/*Distance d1;
 	d1.print();
 	Distance d2(5, 2.55);
 	d2.print();
@@ -58,9 +73,38 @@ void distance()
 	d3.setDistance(7, 20.3);
 	d3.print();
 	Distance d4 = d3;
-	d4.print();
+	d4.print();*/
 
 
+	Distance d5(6, 3.5); //Passing Objects as Arguments
+	Distance d6(2, 5.9); //Passing Objects as Arguments
+	Distance sumd5_d6 = d5.add_distance(d6);//Passing Objects as Arguments
+	sumd5_d6.print();
+
+
+	Distance d7(8, 3.8);
+	Distance d8(16, 8.8);
+	Distance d9 = d7 + d8;
+	d9.print();
+
+}
+void calculator()
+{
+	// static metod 
+	cout << Calculator::add(12, 26) << endl;
+	cout << Calculator::multiply(12, 26) << endl;
+	cout << Calculator::subtract(12, 26) << endl;
+
+
+}
+void counter()
+{
+	Counter c1(5);
+	Counter c2(10);
+	Counter c3 = c1++;
+	cout << c3.get_count() << endl;
+	Counter c4 = c2--;
+	cout << c4.get_count() << endl;
 }
 void Distance_expression()
 {
@@ -173,7 +217,6 @@ void Reverse(int n)
 {
 	int rev = 0;
 	int m = n;
-	int r;
 	for (int i = 0; i < n; i++)
 	{
 		rev = rev * 10 + n % 10;
@@ -236,21 +279,22 @@ void Draw_fyrkant(int n)
 {
 	for (int i = 1; i <= n; i++)
 	{
-		for(int j = 1; j <= n; j++)
+		for (int j = 1; j <= n; j++)
 		{
-			
+
 			cout << " * ";
 		}
 		cout << endl;
 	}
-	
-	
+
+
 }
-
-
 
 int main()
 {
+
+
+	//Uppgifter 2021-11-05
 	/*Distance_expression();
 	triangles_area();
 	hitta_Max(8, 4);
@@ -259,13 +303,16 @@ int main()
 	voidWorking(18);
 	voidEligible(55);
 	Max3(100, 20, 10);
-	DigitToWord();*/
-	/*Prime();*/
-	/*Reverse(5475);*/
-	/*voidDisplay();*/
-	/*Min();*/
-	/*Count();*/
-	/*Draw_fyrkant(5);*/
+	DigitToWord();
+	Prime();
+	Reverse(5475);
+	voidDisplay();
+	Min();
+	Count();
+	Draw_fyrkant(5);*/
+
+	distance();
+	car();
 
 
 
