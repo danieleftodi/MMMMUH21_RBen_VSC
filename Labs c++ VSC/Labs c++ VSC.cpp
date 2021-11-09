@@ -9,19 +9,32 @@
 #include <cstdlib>
 #include <ctime>
 #include <cmath>
-#include<stdbool.h>
+#include <stdbool.h>
 #include <climits>
 #include <random>
 #include <climits>
 #include <sstream>
 #include "Car.h"
 #include "Overlaoding.h"
-#include"Distance.h"
-#include"Calculator.h"
-#include"Counter.h"
+#include "Distance.h"
+#include "Calculator.h"
+#include "Counter.h"
+#include "Student.h"
 
 using namespace std;
 
+void student() //Inheritance
+{
+	Student s1("Rachid", "male", 18, 6, 78, "lund");
+	s1.print();
+
+	/*s1.print();
+	s1.set_age(18);
+	s1.set_gender("male");
+	s1.set_name("Rachid");
+	s1.print();*/
+	
+}
 void overlaoding()
 {
 	Overlaoding c1;
@@ -292,8 +305,6 @@ void Draw_fyrkant(int n)
 
 int main()
 {
-
-
 	//Uppgifter 2021-11-05
 	/*Distance_expression();
 	triangles_area();
@@ -311,12 +322,8 @@ int main()
 	Count();
 	Draw_fyrkant(5);*/
 
-	distance();
-	car();
-
-
-
-
+	student();
+	
 }
 
 

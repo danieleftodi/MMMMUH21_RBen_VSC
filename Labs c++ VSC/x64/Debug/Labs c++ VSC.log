@@ -1,8 +1,3 @@
-﻿  Labs c++ VSC.cpp
-C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(80,20): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(85,20): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(86,21): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(114,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  Walk.cpp
-  Generating Code...
+﻿  Student.cpp
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Student.cpp(27,9): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
   Labs c++ VSC.vcxproj -> C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\x64\Debug\Labs c++ VSC.exe

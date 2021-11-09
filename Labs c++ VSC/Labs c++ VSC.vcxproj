@@ -148,6 +148,8 @@
     </ClCompile>
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="Overlaoding.cpp" />
+    <ClCompile Include="Person.cpp" />
+    <ClCompile Include="Student.cpp" />
     <ClCompile Include="Walk.cpp">
       <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpp20</LanguageStandard>
     </ClCompile>
@@ -158,7 +160,9 @@
     <ClInclude Include="Counter.h" />
     <ClInclude Include="Distance.h" />
     <ClInclude Include="Overlaoding.h" />
+    <ClInclude Include="Person.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Student.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Labs c++ VSC.rc" />
