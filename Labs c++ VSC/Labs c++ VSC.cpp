@@ -20,6 +20,7 @@
 #include "Calculator.h"
 #include "Counter.h"
 #include "Student.h"
+#include<iomanip>
 
 using namespace std;
 
@@ -33,7 +34,7 @@ void student() //Inheritance
 	s1.set_gender("male");
 	s1.set_name("Rachid");
 	s1.print();*/
-	
+
 }
 void overlaoding()
 {
@@ -302,30 +303,85 @@ void Draw_fyrkant(int n)
 
 
 }
+struct student_Struct // Använd functionen void stud_struct()
+{
+	int age;
+	float weight;
+	int length;
+	string name;
+	int person_nr;
+	string jobb;
 
+	void PrintStruct()
+	{
+		cout << "*****************************" << endl;
+		cout << name << " gar i pension om: " << setw(10) << 65 - age << endl;
+		cout << "*****************************" << endl;
+	}
+};
+void stud_struct()
+{
+	int size = 0;
+	student_Struct List[6];
+	cout << "Enter antal studenter: ";
+	cin >> size;
+
+	for (int i = 0; i < size; i++)
+	{
+		cout << endl;
+		cout << "Student " << i + 1 << endl;
+		cout << "*********" << endl;
+		cout << "enter Student name: ";
+		cin >> List[i].name;
+		cout << "enter Student age: ";
+		cin >> List[i].age;
+		cout << "enter Student weight : ";
+		cin >> List[i].weight;
+		cout << "enter Student length: ";
+		cin >> List[i].length;
+		cout << "enter Student person_nr: ";
+		cin >> List[i].person_nr;
+		cout << "enter Student jobb: ";
+		cin >> List[i].jobb;
+
+	}
+	for (int j = 0; j < size; j++)
+	{
+		cout << endl;
+		cout << "Student " << j + 1 << endl;
+		cout << "*********" << endl;
+		cout << "Student name: " << setw(10) << List[j].name << endl;
+		cout << "Student age:  " << setw(8) << List[j].age << endl;
+		cout << "Student weight: " << setw(8) << List[j].weight << endl;
+		cout << "Student length: " << setw(8) << List[j].length << endl;
+		cout << "Student person_nr:	" << setw(6) << List[j].person_nr << endl;
+		cout << "Student jobb:	" << setw(10) << List[j].jobb << endl;
+	}
+	for (int m = 0; m < size; m++)
+	{
+		List[m].PrintStruct();
+	}
+}
 int main()
 {
-	//Uppgifter 2021-11-05
-	/*Distance_expression();
-	triangles_area();
-	hitta_Max(8, 4);
-	Postiv_or_Negativ(-6);
-	voidOddEven(20);
-	voidWorking(18);
-	voidEligible(55);
-	Max3(100, 20, 10);
-	DigitToWord();
-	Prime();
-	Reverse(5475);
-	voidDisplay();
-	Min();
-	Count();
-	Draw_fyrkant(5);*/
+	//	//Uppgifter 2021-11-05
+	//	/*Distance_expression();
+	//	triangles_area();
+	//	hitta_Max(8, 4);
+	//	Postiv_or_Negativ(-6);
+	//	voidOddEven(20);
+	//	voidWorking(18);
+	//	voidEligible(55);
+	//	Max3(100, 20, 10);
+	//	DigitToWord();
+	//	Prime();
+	//	Reverse(5475);
+	//	voidDisplay();
+	//	Min();
+	//	Count();
+	//	Draw_fyrkant(5);*/
 
-	student();
-	
 }
-
 
 //class rectangle
 //{
@@ -435,77 +491,6 @@ int main()
 //}
 //
 //
-
-//struct student
-//{
-//	int age;
-//	float weight;
-//	int length;
-//	string name;
-//	int person_nr;
-//	string jobb;
-//
-//	void PrintStruct()
-//	{
-//		cout << name << " gar i pension om: "<< 65 - age << endl;
-//	}
-//
-//};
-//void print(student List[], int size);
-//int main()
-//{
-//	int size = 0;
-//	student List[6];
-//	cout << "Enter antal studenter: ";
-//	cin >> size;
-//
-//	for(int i = 0; i <size; i++)
-//	{
-//		cout << endl;
-//		cout <<"Student " << i + 1 << endl;
-//		cout <<"*********"<< endl;
-//		cout << "enter Student name: ";
-//		cin >> List[i].name;
-//		cout << "enter Student age: ";
-//		cin >> List[i].age;
-//		cout << "enter Student weight : ";
-//		cin >> List[i].weight;
-//		cout << "enter Student length: ";
-//		cin >> List[i].length;
-//		cout << "enter Student person_nr: ";
-//		cin >> List[i].person_nr;
-//		cout << "enter Student jobb: ";
-//		cin >> List[i].jobb;
-//
-//	}
-//
-//	for(int i = 0; i < size; i++)
-//	{
-//		List[i].PrintStruct();
-//
-//	}
-//
-//	print(List, size);
-//
-//	return 0;
-//
-//}
-//void print(student List[], int size)
-//{
-//	for (int i = 0; i < size; i++)
-//	{
-//		cout << endl;
-//		cout << "Student " << i + 1 << endl;
-//		cout << "*********" << endl;
-//		cout << "Student name: "<< List[i].name << endl;
-//		cout << "Student age:  "<< List[i].age << endl;
-//		cout << "Student weight: "<< List[i].weight << endl;
-//		cout << "Student length: "<< List[i].length << endl;
-//		cout << "Student person_nr:	"<< List[i].person_nr << endl;
-//		cout << "Student jobb:	"<< List[i].jobb << endl;	
-//	}
-//
-//}
 
 //void swap(int& num1, int& num2) //by refernce
 //{
