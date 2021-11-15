@@ -1,2 +1,19 @@
-﻿  Labs c++ VSC.cpp
-  Labs c++ VSC.vcxproj -> C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Debug\Labs c++ VSC.exe
+﻿  Calculator.cpp
+  Counter.cpp
+  Distance.cpp
+  Multiple Inheritance.cpp
+  Labs c++ VSC.cpp
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(94,20): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(99,20): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(100,21): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(128,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Car.cpp
+  Overlaoding.cpp
+  Person.cpp
+  ATM.cpp
+  Student.cpp
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Student.cpp(27,9): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  Walk.cpp
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Walk.cpp(66,13): error C7555: use of designated initializers requires at least '/std:c++20'
+  övningar.cpp
+  Generating Code...

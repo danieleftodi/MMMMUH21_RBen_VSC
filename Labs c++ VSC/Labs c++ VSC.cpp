@@ -362,26 +362,26 @@ void stud_struct()
 		List[m].PrintStruct();
 	}
 }
-int main()
-{
-	//	//Uppgifter 2021-11-05
-	//	/*Distance_expression();
-	//	triangles_area();
-	//	hitta_Max(8, 4);
-	//	Postiv_or_Negativ(-6);
-	//	voidOddEven(20);
-	//	voidWorking(18);
-	//	voidEligible(55);
-	//	Max3(100, 20, 10);
-	//	DigitToWord();
-	//	Prime();
-	//	Reverse(5475);
-	//	voidDisplay();
-	//	Min();
-	//	Count();
-	//	Draw_fyrkant(5);*/
-
-}
+//int main()
+//{
+//		/*Uppgifter 2021-11-05*/
+//		Distance_expression();
+//		triangles_area();
+//		hitta_Max(8, 4);
+//		Postiv_or_Negativ(-6);
+//		voidOddEven(20);
+//		voidWorking(18);
+//		voidEligible(55);
+//		Max3(100, 20, 10);
+//		DigitToWord();
+//		Prime();
+//		Reverse(5475);
+//		voidDisplay();
+//		Min();
+//		Count();
+//		Draw_fyrkant(5);
+//
+//}
 
 //class rectangle
 //{

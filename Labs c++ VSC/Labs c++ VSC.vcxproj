@@ -143,16 +143,21 @@
     <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="Counter.cpp" />
     <ClCompile Include="Distance.cpp" />
+    <ClCompile Include="Friend Class.cpp" />
+    <ClCompile Include="Friend Function .cpp" />
+    <ClCompile Include="Multiple Inheritance + overriding.cpp" />
     <ClCompile Include="Labs c++ VSC.cpp">
       <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpp20</LanguageStandard>
     </ClCompile>
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="Overlaoding.cpp" />
     <ClCompile Include="Person.cpp" />
+    <ClCompile Include="ATM.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="Walk.cpp">
       <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpp20</LanguageStandard>
     </ClCompile>
+    <ClCompile Include="Polymorphism and virtual Functions.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Calculator.h" />

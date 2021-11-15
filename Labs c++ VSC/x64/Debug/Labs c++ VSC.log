@@ -1,7 +1,3 @@
-﻿  Labs c++ VSC.cpp
-C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(94,20): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(99,20): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(100,21): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(128,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(369,16): warning C4091: '': ignored on left of 'student_Struct' when no variable is declared
+﻿  Friend Class.cpp
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Friend Class.cpp(56,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
   Labs c++ VSC.vcxproj -> C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\x64\Debug\Labs c++ VSC.exe
