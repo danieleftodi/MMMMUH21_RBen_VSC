@@ -53,6 +53,9 @@
     <ClCompile Include="Friend Class.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="ATM Rachid.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h">

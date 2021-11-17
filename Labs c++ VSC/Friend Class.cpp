@@ -52,9 +52,9 @@ public:
 	}
 };
 
-void main()
-{
-	PPerson x("Rachid", "Man", 35);
-	printclass B;
-	B.print(x);
-}
+//void main()
+//{
+//	PPerson x("Rachid", "Man", 35);
+//	printclass B;
+//	B.print(x);
+//}

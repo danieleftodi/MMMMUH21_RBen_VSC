@@ -1,25 +1,23 @@
 #include <iostream>								
 #include <string>
 
-
 using namespace std;
 
 class ATM
 {
 private:
-	int loggedInAccountLocation;
 	double accountBalance = 0;
 	double beginningBalance = 0;
-	double lastMoneyMovement;
-	char lastOperation;
-	double depositAmount;
-	double withdrawalAmount;
-	string username = "sami";
-	string password = "1234";
+	double depositAmount = 0;
+	double withdrawalAmount = 0;
+	string username ="sami";
+	string password ="1234";
 	string loginUsername;
 	string loginPassword;
+	int last = 0;
 
 public:
+
 	void CreateNewAccount()	//creates the user account
 	{
 		cout << "Enter your user name:" << endl;
@@ -49,7 +47,7 @@ public:
 					cout << "********************" << endl;
 					cout << "Access Granted..." << loginUsername << endl;
 					cout << "********************" << endl;
-					AccountMenu();
+					GetAccountMenu();
 				}
 				if (loginPassword != password)
 					cout << "*****************************************************************************" << endl;
@@ -65,42 +63,39 @@ public:
 		cin >> depositAmount;
 		accountBalance += depositAmount;
 		beginningBalance = accountBalance - depositAmount;
-		AccountMenu();
+		last = 1;
+		GetAccountMenu();
 	}
 	void WithdrawMoney()//func to withdraw any amount of money from the account
 	{
 		cout << "Amount of withdrawal: " << endl;
 		cin >> withdrawalAmount;
-		accountBalance -= withdrawalAmount;
-		beginningBalance = accountBalance + withdrawalAmount;
-		AccountMenu();
-	}
-	void SetAccountLogin()//sets the location for the account information in the vector
-	{
+		if (withdrawalAmount > accountBalance)
+		{
+			cout << "**********************************************************" << endl;
+			cout << "you have little money in your account exit or deposit money" << endl;
+			cout << "**********************************************************" << endl;
+			GetAccountMenu();
+		}
+		else
+		{
+			accountBalance -= withdrawalAmount;
+			beginningBalance = accountBalance + withdrawalAmount;
+			last = 2;
+			GetAccountMenu();
+		}
 
 	}
-	void SetLastMoneyMovement()//sets what the last action was for that account (dep or withdr)
+	int GetAccountLogin()//makes sure the account login is in the list
 	{
-
-	}
-	void SetBeginningBalance()//Func that ensures the users account starts as 0 as well as that it updates when performing withdrawal or deposit
-	{
-
-	}
-	void SetLastOperation()//defines last action made by user
-	{
-
-	}
-	int GetAccountLogin()//makes sure the account login is in the lis
-	{
-		char val;
+		char userInput;
 		cout << "\t******Welcome to Lund center ATM*******" << endl;
 		cout << "Please select an option from menu below " << endl;
 		cout << " l-> Login" << endl;
 		cout << " c-> Create New Account" << endl;
 		cout << " q-> Quit" << endl;
-		cin >> val;
-		switch (val)
+		cin >> userInput;;
+		switch (userInput)
 		{
 		case 'l':AccountLogin(); break;
 		case 'c':CreateNewAccount(); break;
@@ -111,43 +106,36 @@ public:
 			cout << "\t*************************" << endl;
 			GetAccountLogin();
 		}
-
-	}
-	double GetLastMoneyMovement()//gets the information on most recently performed transaction
-	{
+		return 0;
 
 	}
 	double GetAccountBalance()//shows the users account balance
 	{
 		cout << "********************" << endl;
 		cout << "Beginning Balance: " << beginningBalance << endl;
+		if (last == 1)
+		{
+			cout << "Deposit Amount: " << depositAmount << endl;
+		}
+		if (last == 2)
+		{
+			cout << "Withdraw Amount: " << withdrawalAmount << endl;
+		}
 		cout << "Your Balance is: " << accountBalance << endl;
 		cout << "********************" << endl;
-		AccountMenu();
+		GetAccountMenu();
 		return 0;
 	}
-	double GetBeginningBalance()//retrieves the balance before last performed action
+	char GetAccountMenu()//representing the menu of user choices
 	{
-
-	}
-	char GetLastOperation()//gets the last action, ex withdrawal or deposit
-	{
-
-	}
-	string GetUsername()//gets the username of the logged in account
-	{
-
-	}
-	void AccountMenu()//representing the menu of user choices
-	{
-		char alphabet;
+		char userInput;
 		cout << " d-> Deposit Money" << endl;
 		cout << " w-> Withdraw Money" << endl;
 		cout << " r-> Request Balance" << endl;
 		cout << " z-> logut" << endl;
 		cout << " q-> Quit" << endl;
-		cin >> alphabet;
-		switch (alphabet)
+		cin >> userInput;
+		switch (userInput)
 		{
 		case 'd':DepositMoney(); break;
 		case 'w':WithdrawMoney(); break;
@@ -162,14 +150,11 @@ public:
 		}
 	}
 
-
 };
 
+int main()
+{
+	ATM user;
+	user.GetAccountLogin();
 
-//int main()
-//{
-//	ATM user;
-//	user.GetAccountLogin();
-//
-//
-//}
+}

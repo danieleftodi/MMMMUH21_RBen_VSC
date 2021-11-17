@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ATM Rachid.cpp" />
     <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="Counter.cpp" />
     <ClCompile Include="Distance.cpp" />
