@@ -1,6 +1,5 @@
 #include <iostream>								
 #include <string>
-
 using namespace std;
 
 class ATM
@@ -44,18 +43,13 @@ public:
 			cout << "********************" << endl;
 			GetAccountMenu();
 		}
-		if ((loginUsername != username) && (loginPassword != password))
+		else
 		{
 			cout << "*****************************************************************************" << endl;
 			cout << "Access Denied.....Invalid Username/Password: Test again or create new account" << endl;
 			cout << "*****************************************************************************" << endl;
 			GetAccountLogin();
 		}
-
-
-
-
-
 	}
 	void DepositMoney()//func to deposit any amount of money to the account
 	{
