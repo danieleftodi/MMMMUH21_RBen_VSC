@@ -37,19 +37,21 @@ public:
 		cout << "Enter Password: " << endl;
 		cin >> loginPassword;
 
-		if ((loginUsername == username) || (loginPassword == password))
+		if ((loginUsername == username) && (loginPassword == password))
 		{
 			cout << "********************" << endl;
 			cout << "Access Granted..." << loginUsername << endl;
 			cout << "********************" << endl;
 			GetAccountMenu();
 		}
-
-		if ((loginUsername != username) || (loginPassword != password))
+		if ((loginUsername != username) && (loginPassword != password))
+		{
 			cout << "*****************************************************************************" << endl;
-		cout << "Access Denied.....Invalid Username/Password: Test again or create new account" << endl;
-		cout << "*****************************************************************************" << endl;
-		GetAccountLogin();
+			cout << "Access Denied.....Invalid Username/Password: Test again or create new account" << endl;
+			cout << "*****************************************************************************" << endl;
+			GetAccountLogin();
+		}
+
 
 
 
