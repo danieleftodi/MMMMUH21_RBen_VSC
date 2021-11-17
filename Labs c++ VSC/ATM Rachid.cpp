@@ -10,8 +10,8 @@ private:
 	double beginningBalance = 0;
 	double depositAmount = 0;
 	double withdrawalAmount = 0;
-	string username ="sami";
-	string password ="1234";
+	string username = "sami";
+	string password = "1234";
 	string loginUsername;
 	string loginPassword;
 	int last = 0;
@@ -34,28 +34,26 @@ public:
 
 		cout << "Enter Username: " << endl;
 		cin >> loginUsername;
+		cout << "Enter Password: " << endl;
+		cin >> loginPassword;
 
-		if (loginUsername == username)
+		if ((loginUsername == username) || (loginPassword == password))
 		{
-			cout << "Enter Password: " << endl;
-			cin >> loginPassword;
-
-			if (loginUsername == username)
-			{
-				if (loginPassword == password)
-				{
-					cout << "********************" << endl;
-					cout << "Access Granted..." << loginUsername << endl;
-					cout << "********************" << endl;
-					GetAccountMenu();
-				}
-				if (loginPassword != password)
-					cout << "*****************************************************************************" << endl;
-				cout << "Access Denied.....Invalid Username/Password: Test again or create new account" << endl;
-				cout << "*****************************************************************************" << endl;
-				GetAccountLogin();
-			}
+			cout << "********************" << endl;
+			cout << "Access Granted..." << loginUsername << endl;
+			cout << "********************" << endl;
+			GetAccountMenu();
 		}
+
+		if ((loginUsername != username) || (loginPassword != password))
+			cout << "*****************************************************************************" << endl;
+		cout << "Access Denied.....Invalid Username/Password: Test again or create new account" << endl;
+		cout << "*****************************************************************************" << endl;
+		GetAccountLogin();
+
+
+
+
 	}
 	void DepositMoney()//func to deposit any amount of money to the account
 	{
