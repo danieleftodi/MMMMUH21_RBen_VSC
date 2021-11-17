@@ -126,7 +126,7 @@ public:
 		cout << " d-> Deposit Money" << endl;
 		cout << " w-> Withdraw Money" << endl;
 		cout << " r-> Request Balance" << endl;
-		cout << " z-> logut" << endl;
+		cout << " z-> logout" << endl;
 		cout << " q-> Quit" << endl;
 		cin >> userInput;
 		switch (userInput)
