@@ -1,3 +1,6 @@
-﻿  ATM Rachid.cpp
-C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\ATM Rachid.cpp(145): warning C4715: 'ATM::GetAccountMenu': not all control paths return a value
+﻿  Labs c++ VSC.cpp
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(95,20): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(100,20): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(101,21): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\Labs c++ VSC.cpp(129,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   Labs c++ VSC.vcxproj -> C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\x64\Debug\Labs c++ VSC.exe

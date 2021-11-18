@@ -21,6 +21,7 @@
 #include "Counter.h"
 #include "Student.h"
 #include<iomanip>
+#include<vector>
 
 using namespace std;
 
@@ -361,6 +362,21 @@ void stud_struct()
 	{
 		List[m].PrintStruct();
 	}
+}
+void vector()
+{
+
+	///*vector<string>passwordlist;
+	//vector<string>usernamelist;*/
+	//string info;
+	//
+	//cout << "Add a username then password.\n";
+	//cout << "Enter user name: ";
+	//cin >> info;
+	//usernamelist.push_back(info);
+	//cout << "Enter password: ";
+	//cin >> info;
+	//passwordlist.push_back(info);
 }
 //int main()
 //{
