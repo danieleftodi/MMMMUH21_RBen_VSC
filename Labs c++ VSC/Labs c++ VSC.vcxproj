@@ -140,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ATM Rachid.cpp" />
+    <ClCompile Include="ATM en user.cpp" />
     <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="Counter.cpp" />
     <ClCompile Include="Distance.cpp" />
@@ -153,7 +153,7 @@
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="Overlaoding.cpp" />
     <ClCompile Include="Person.cpp" />
-    <ClCompile Include="ATM.cpp" />
+    <ClCompile Include="ATM med flera user.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="Walk.cpp">
       <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpp20</LanguageStandard>

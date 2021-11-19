@@ -38,7 +38,7 @@
     <ClCompile Include="Student.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="ATM.cpp">
+    <ClCompile Include="ATM med flera user.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="Multiple Inheritance + overriding.cpp">
@@ -53,7 +53,7 @@
     <ClCompile Include="Friend Class.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="ATM Rachid.cpp">
+    <ClCompile Include="ATM en user.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>

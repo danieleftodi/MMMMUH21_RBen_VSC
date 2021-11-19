@@ -1,3 +1,4 @@
-﻿  ATM Rachid.cpp
-C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\ATM Rachid.cpp(146): warning C4715: 'ATM::GetAccountMenu': not all control paths return a value
+﻿  ATM.cpp
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\ATM.cpp(76,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\ATM.cpp(83,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   Labs c++ VSC.vcxproj -> C:\Users\Rachid\Documents\Gitkaraken\MMMMUH21_RBen_VSC\Labs c++ VSC\x64\Debug\Labs c++ VSC.exe

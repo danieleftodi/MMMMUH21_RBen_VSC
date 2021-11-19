@@ -22,6 +22,8 @@
 #include "Student.h"
 #include<iomanip>
 #include<vector>
+#include <fstream>
+
 
 using namespace std;
 
@@ -378,24 +380,107 @@ void vector()
 	//cin >> info;
 	//passwordlist.push_back(info);
 }
+int Iomanip_SetPrecision()
+{
+	double float_value = 3.14159;
+	cout << setprecision(4) << float_value << '\n';
+	cout << setprecision(9) << float_value << '\n';
+	cout << fixed;
+	cout << setprecision(5) << float_value << '\n';
+	cout << setprecision(10) << float_value << '\n';
+	return 0;
+}
+int Iomanip_Setw()
+{
+	cout << "The number printed with width 10" << endl;
+	cout << setw(10);
+	cout << 77 << endl;
+	cout << "The number printed with width 2" << endl;
+	cout << setw(2);
+	cout << 10 << endl;
+	cout << "The number printed with width 5" << endl;
+	cout << setw(5);
+	cout << 25 << endl;
+	return 0;
+}
+int Iomanip_Setfill()
+{
+	cout << setfill('*') << setw(10);
+	cout << 15 << endl;
+	cout << setfill('#') << setw(5);
+	cout << 5 << endl;
+	cout << setfill('#') << setw(5);
+	cout << 1 << endl;
+	cout << setfill('*') << setw(10);
+	cout << 25 << endl;
+	return 0;
+}
+int writing_Fstream()
+{
+	ofstream myfile("example.txt");
+	if (myfile.is_open())
+	{
+		myfile << "Hej Jag heter Rachid.\n";
+		myfile << "Jag jobbar.\n";
+		myfile.close();
+	}
+	else cout << "Unable to open file";
+	return 0;
+}
+int reading_Fstream()
+{
+	string line;
+	ifstream myfile("example.txt");
+	if (myfile.is_open())
+	{
+		/*while (getline(myfile, line))
+		{
+			cout << line << '\n';
+		}
+		myfile.close();*/
+
+		for (int i = 0; i < 2; i++)
+		{
+			getline(myfile, line);
+			cout << line << '\n';
+		}
+		myfile.close();
+	}
+	else cout << "Unable to open file";
+	return 0;
+
+}
+
+
+
 //int main()
 //{
-//		/*Uppgifter 2021-11-05*/
-//		Distance_expression();
-//		triangles_area();
-//		hitta_Max(8, 4);
-//		Postiv_or_Negativ(-6);
-//		voidOddEven(20);
-//		voidWorking(18);
-//		voidEligible(55);
-//		Max3(100, 20, 10);
-//		DigitToWord();
-//		Prime();
-//		Reverse(5475);
-//		voidDisplay();
-//		Min();
-//		Count();
-//		Draw_fyrkant(5);
+//	
+//	/*Distance_expression();
+//	triangles_area();
+//	hitta_Max(8, 4);
+//	Postiv_or_Negativ(-6);
+//	voidOddEven(20);
+//	voidWorking(18);
+//	voidEligible(55);
+//	Max3(100, 20, 10);
+//	DigitToWord();
+//	Prime();
+//	Reverse(5475);
+//	voidDisplay();
+//	Min();
+//	Count();
+//	Draw_fyrkant(5);
+//	Iomanip_SetPrecision();
+//	Iomanip_Setw();
+//	Iomanip_Setfill();*/
+//	/*cout << setw(2) << 1 << setw(6) << 0 << setw(6) << 0 << endl;
+//	cout << endl;
+//	cout << setw(2) << 0 << setw(6) << 1 << setw(6) << 0 << endl;
+//	cout << endl;
+//	cout << setw(2) << 0 << setw(6) << 0 << setw(6) << 1 << endl;*/
+//	writing_Fstream();
+//	reading_Fstream();
 //
 //}
 
