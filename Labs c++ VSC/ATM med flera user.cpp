@@ -18,7 +18,7 @@ private:
 	string loginPassword;
 	int last;
 public:
-	friend void Menu();
+	
 	void CreateNewAccount(string newUsername, string newPassword);//creates the user account
 	void AccountLogin(string loginUsername, string loginPassword);//used to login the user using account details
 	void DepositMoney(double depositAmount);//func to deposit any amount of money to the account
